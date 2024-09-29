@@ -26,7 +26,7 @@
 
 
 ## Установка
-Предварительно установите Docker с официального репозитория 
+Предварительно установите Docker с официального сайта 
 <img src="https://github.com/user-attachments/assets/b1bd8848-03cd-4f7e-a0f1-1f5579975811" width="20" alt="docker">
 [https://docker.qubitpi.org/desktop/install/windows-install/](https://docker.qubitpi.org/desktop/install/windows-install/)
 ### Клонирование репозитория
