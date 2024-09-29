@@ -51,7 +51,7 @@ Status: Выберите один из трех вариантов: "in_process"
 - Подтвердите удаление, нажав на кнопку "Yes, I'm sure" на открывшейся странице.
 ## API
 Для отправки запросов, мною было выбрано приложение Postman 
-<img src="[https://github.com/user-attachments/assets/71dca4a1-7847-4417-b458-ba392b09afc2](https://github.com/user-attachments/assets/71dca4a1-7847-4417-b458-ba392b09afc2)" width="50"/>
+<img src="[https://github.com/user-attachments/assets/71dca4a1-7847-4417-b458-ba392b09afc2](https://github.com/user-attachments/assets/71dca4a1-7847-4417-b458-ba392b09afc2)" width="50" alt="postman">
 
 ### **Создание задачи**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/](/api/tasks/http://127.0.0.1:8000/api/tasks/)
