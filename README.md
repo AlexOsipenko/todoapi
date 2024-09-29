@@ -24,7 +24,9 @@
 
 
 ## Установка
-Предварительно установите Docker с официального репозитория [https://docker.qubitpi.org/desktop/install/windows-install/](https://docker.qubitpi.org/desktop/install/windows-install/)
+Предварительно установите Docker с официального репозитория 
+<img src="https://github.com/user-attachments/assets/b1bd8848-03cd-4f7e-a0f1-1f5579975811" width="20" alt="postman">
+[https://docker.qubitpi.org/desktop/install/windows-install/](https://docker.qubitpi.org/desktop/install/windows-install/)
 ### Клонирование репозитория
 ```bash
 git clone https://github.com/AlexOsipenko/todoapi.git
