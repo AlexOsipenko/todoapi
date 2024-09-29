@@ -24,11 +24,21 @@
 
 
 ## Установка
+Предварительно установите Docker с официального репозитория [https://docker.qubitpi.org/desktop/install/windows-install/](https://docker.qubitpi.org/desktop/install/windows-install/)
 ### Клонирование репозитория
 ```bash
 git clone https://github.com/AlexOsipenko/todoapi.git
 cd todoapi
+cd todo_project
 ```
+### Создание и запуск Docker-контейнера
+Используйте Docker Compose для создания контейнера и запуска приложения:
+```bash
+docker-compose up --build
+```
+### Доступ к приложению
+
+
 ## Панель администратора
 
 <p align="center">
@@ -42,7 +52,7 @@ user: `admin`
 password: `admin`
 ### Возможные операции в админке
 **Список тасков**
-- Выберите "Tasks" На главной странице админ-панели/
+- Выберите "Tasks" На главной странице админ-панели
 - Вы увидите таблицу со списком всех задач, которые имеют поля Tttle, Description и Status.
  
 ![image](https://github.com/user-attachments/assets/a380569f-ad78-461d-8c37-ef15f8f3b1de)
