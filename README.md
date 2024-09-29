@@ -67,24 +67,30 @@ Status: Выберите один из трех вариантов: "in_process"
 **Получение задачи по ID**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
 - Метод: `GET`
-- Пример запроса: `http://127.0.0.1:8000/api/tasks/2`
+- Пример URL: `http://127.0.0.1:8000/api/tasks/2/`
 - Ответ:
-- 
+ 
 ![image](https://github.com/user-attachments/assets/9f5d336f-46f3-4954-9576-04b7036bfb39)
 
 **Обновление задачи по ID**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
 - Метод: `PATCH`
-- Пример запроса: `http://127.0.0.1:8000/api/tasks/3`
+- Пример URL: `http://127.0.0.1:8000/api/tasks/3/`
 - Пример body:
 
 ![image](https://github.com/user-attachments/assets/e609af06-f948-4104-861d-ca3f8f092c0d)
 
 - Ответ:
-  
-5. Удаление задачи по ID
-URL: /api/tasks/{id}/
-Метод: DELETE
-Ответ (204 No Content) при успешном удалении.
+
+![image](https://github.com/user-attachments/assets/4f15f80f-4f21-4576-8dc8-9dddcd559070)
+
+**Удаление задачи по ID**
+- URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
+- Метод: `DELETE`
+- Пример URL: `http://127.0.0.1:8000/api/tasks/4/`
+- Ответ: `204 No Content`
+
+![image](https://github.com/user-attachments/assets/812748e9-dcbb-4cee-a24d-f7ba215f9beb)
+
 
 
