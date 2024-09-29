@@ -8,9 +8,11 @@ git clone https://github.com/AlexOsipenko/todoapi.git
 cd todoapi
 ```
 ## Панель администратора
+
 <p align="center">
  <img src="https://github.com/user-attachments/assets/f730c318-6c8c-4212-a31e-06934d82ca2d" alt="admin">
 </p>
+
 ### Адрес
 `http://127.0.0.1:8000/admin/`
 ### Креды суперпользователя
