@@ -3,6 +3,8 @@
 ## Навигация
 - [Установка](#установка)
   - [Клонирование репозитория](#клонирование-репозитория)
+  - [Создание и запуск Docker-контейнера](#создание-и-запуск-докер-контейнера)
+  - [Доступ к приложению](#доступ-к-приложению)
 - [Панель администратора](#панель-администратора)
   - [Адрес](#адрес)
   - [Креды суперпользователя](#креды-суперпользователя)
@@ -25,7 +27,7 @@
 
 ## Установка
 Предварительно установите Docker с официального репозитория 
-<img src="https://github.com/user-attachments/assets/b1bd8848-03cd-4f7e-a0f1-1f5579975811" width="20" alt="postman">
+<img src="https://github.com/user-attachments/assets/b1bd8848-03cd-4f7e-a0f1-1f5579975811" width="20" alt="docker">
 [https://docker.qubitpi.org/desktop/install/windows-install/](https://docker.qubitpi.org/desktop/install/windows-install/)
 ### Клонирование репозитория
 ```bash
