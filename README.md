@@ -50,7 +50,7 @@ Status: Выберите один из трех вариантов: "in_process"
 
 - Подтвердите удаление, нажав на кнопку "Yes, I'm sure" на открывшейся странице.
 ## API
-###**Создание задачи**
+### **Создание задачи**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/](/api/tasks/http://127.0.0.1:8000/api/tasks/)
 - Метод: `POST`
 - Пример body:
@@ -61,7 +61,7 @@ Status: Выберите один из трех вариантов: "in_process"
 
 ![image](https://github.com/user-attachments/assets/fb94e478-45f6-4b67-aa58-ba2a9d434166)
 
-###**Получение всех задач**
+### **Получение всех задач**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/](/api/tasks/http://127.0.0.1:8000/api/tasks/)
 - Метод: `GET`
 - Ответ: `200 OK`
@@ -69,7 +69,7 @@ Status: Выберите один из трех вариантов: "in_process"
 ![image](https://github.com/user-attachments/assets/e97f9094-69e9-428b-887f-0db202e4e8b6)
 
 
-###**Получение задачи по ID**
+### **Получение задачи по ID**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
 - Метод: `GET`
 - Пример URL: `http://127.0.0.1:8000/api/tasks/2/`
@@ -78,7 +78,7 @@ Status: Выберите один из трех вариантов: "in_process"
  
 ![image](https://github.com/user-attachments/assets/9f5d336f-46f3-4954-9576-04b7036bfb39)
 
-###**Обновление задачи по ID**
+### **Обновление задачи по ID**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
 - Метод: `PATCH`
 - Пример URL: `http://127.0.0.1:8000/api/tasks/3/`
@@ -90,7 +90,7 @@ Status: Выберите один из трех вариантов: "in_process"
 
 ![image](https://github.com/user-attachments/assets/4f15f80f-4f21-4576-8dc8-9dddcd559070)
 
-###**Удаление задачи по ID**
+### **Удаление задачи по ID**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
 - Метод: `DELETE`
 - Пример URL: `http://127.0.0.1:8000/api/tasks/4/`
