@@ -20,7 +20,7 @@ password: `admin`
 **Список тасков**
 - Выберите "Tasks" На главной странице админ-панели/
 - Вы увидите таблицу со списком всех задач, которые имеют поля Tttle, Description и Status.
-- 
+ 
 ![image](https://github.com/user-attachments/assets/a380569f-ad78-461d-8c37-ef15f8f3b1de)
 
 
@@ -50,7 +50,7 @@ Status: Выберите один из трех вариантов: "in_process"
 
 - Подтвердите удаление, нажав на кнопку "Yes, I'm sure" на открывшейся странице.
 ## API
-**Создание задачи**
+###**Создание задачи**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/](/api/tasks/http://127.0.0.1:8000/api/tasks/)
 - Метод: `POST`
 - Пример body:
@@ -61,22 +61,24 @@ Status: Выберите один из трех вариантов: "in_process"
 
 ![image](https://github.com/user-attachments/assets/fb94e478-45f6-4b67-aa58-ba2a9d434166)
 
-**Получение всех задач**
+###**Получение всех задач**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/](/api/tasks/http://127.0.0.1:8000/api/tasks/)
 - Метод: `GET`
 - Ответ: `200 OK`
 
 ![image](https://github.com/user-attachments/assets/e97f9094-69e9-428b-887f-0db202e4e8b6)
 
-**Получение задачи по ID**
+
+###**Получение задачи по ID**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
 - Метод: `GET`
 - Пример URL: `http://127.0.0.1:8000/api/tasks/2/`
-- Ответ:
+- Ответ: `200 OK` или `404 Not Found`, если задача не найдена
+ 
  
 ![image](https://github.com/user-attachments/assets/9f5d336f-46f3-4954-9576-04b7036bfb39)
 
-**Обновление задачи по ID**
+###**Обновление задачи по ID**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
 - Метод: `PATCH`
 - Пример URL: `http://127.0.0.1:8000/api/tasks/3/`
@@ -84,15 +86,15 @@ Status: Выберите один из трех вариантов: "in_process"
 
 ![image](https://github.com/user-attachments/assets/e609af06-f948-4104-861d-ca3f8f092c0d)
 
-- Ответ:
+- Ответ: `200 OK` или `404 Not Found`, если задача не найдена. Если обновление невозможно, то `400 Bad Request`
 
 ![image](https://github.com/user-attachments/assets/4f15f80f-4f21-4576-8dc8-9dddcd559070)
 
-**Удаление задачи по ID**
+###**Удаление задачи по ID**
 - URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
 - Метод: `DELETE`
 - Пример URL: `http://127.0.0.1:8000/api/tasks/4/`
-- Ответ: `204 No Content`
+- Ответ: `204 No Content` или `404 Not Found`, если задача не найдена. Если удаление невозможно, то `400 Bad Request`
 
 ![image](https://github.com/user-attachments/assets/812748e9-dcbb-4cee-a24d-f7ba215f9beb)
 
@@ -149,6 +151,7 @@ todo_project/            # Главная директория проекта
 │   ├── urls.py          # Основные маршруты проекта
 │   ├── wsgi.py          
 ├── manage.py            # Основной файл для управления проектом
+├── db.sqlite3           # Файл базы данных
 ├── Dockerfile           # Docker-инструкция для создания образа приложения
 ├── docker-compose.yml   # Конфигурация Docker Compose для контейнеризации проекта
 ├── requirements.txt     # Список зависимостей Python (библиотеки, которые необходимо установить)
