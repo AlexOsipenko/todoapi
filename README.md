@@ -5,7 +5,7 @@
 ### Клонирование репозитория
 ```bash
 git clone https://github.com/AlexOsipenko/todoapi.git
-cd todo-list-api
+cd todoapi
 ```
 ## Панель администратора
 <p align="center">
@@ -124,6 +124,7 @@ class TaskSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("status not found")
         return value
 ```
-
+### Обработка api
+Для создания api были использованы `rest_framework` и входящий в него `viewsets`, который предоставляет стандартные CRUD операции (создание, чтение, обновление, удаление). 
 ### Стиль кода
 Для правильной оптимизации кода, а также его читаемости были соблюдены принципы ООП, а также произведено оформление кода при помощи библиотеки `Black`
