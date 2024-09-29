@@ -5,7 +5,7 @@
 
 ## Панель администратора
 <p align="center">
- <img src="https://github.com/user-attachments/assets/b36bce18-f5cc-4162-b093-be041be08bf0](https://github.com/user-attachments/assets/b729887f-654f-462f-af56-c0d1e203da2f" alt="admin">
+ <img src="https://github.com/user-attachments/assets/f730c318-6c8c-4212-a31e-06934d82ca2d" alt="admin">
 </p>
 ### Адрес
 `http://127.0.0.1:8000/admin/`
