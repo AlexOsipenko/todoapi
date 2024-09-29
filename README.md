@@ -105,6 +105,19 @@ Status: Выберите один из трех вариантов: "in_process"
 ### Serializers
 Для валидации статуса был использовал сериализатор, который находится на пути: `todo_progect/tasks/serializers.py`
 
-![image](https://github.com/user-attachments/assets/9bae1225-a0e4-495b-a22e-d61597a54acc)
+```python
+from rest_framework import serializers
+from .models import Task
 
+
+class TaskSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Task
+        fields = "__all__"
+
+    def validate_status(self, value):
+        if value not in ["in_process", "completed", "cancelled"]:
+            raise serializers.ValidationError("status not found")
+        return value
+```
 
