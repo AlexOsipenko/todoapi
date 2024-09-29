@@ -44,9 +44,9 @@ Status: Выберите один из трех вариантов: "in_process"
 - Подтвердите удаление, нажав на кнопку "Yes, I'm sure" на открывшейся странице.
 ## API
 **Создание задачи**
-- URL: [/api/tasks/](http://127.0.0.1:8000/api/tasks/)
+- URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/](/api/tasks/http://127.0.0.1:8000/api/tasks/)
 - Метод: POST
-Пример body:
+- Пример body:
 ![image](https://github.com/user-attachments/assets/2a477af0-2df8-4429-a5fa-96fdffc28717)
 - Ответ: `201 Created`
 ![image](https://github.com/user-attachments/assets/fb94e478-45f6-4b67-aa58-ba2a9d434166)
