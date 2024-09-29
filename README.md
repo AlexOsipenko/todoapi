@@ -92,5 +92,15 @@ Status: Выберите один из трех вариантов: "in_process"
 
 ![image](https://github.com/user-attachments/assets/812748e9-dcbb-4cee-a24d-f7ba215f9beb)
 
+## Особенности
+### Обработка возможных ошибок
+Если задача имеет статус "completed", ее нельзя удалить, и при попытке удаления возвращается ошибка с кодом `400 Bad Request`
 
+![image](https://github.com/user-attachments/assets/5ea36441-6b0f-4b50-9dbc-96992f5cf803)
+
+Если задача имеет статус, отличный от "in_process", "completed", "canceled", то при попытке записать таск возвращается ошибка с кодом `400 Bad Request`
+
+![image](https://github.com/user-attachments/assets/24824d75-0adf-44a9-b0f6-32205b263b55)
+
+### Serializers
 
