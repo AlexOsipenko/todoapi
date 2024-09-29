@@ -2,7 +2,11 @@
 Учебный проект - создание приложения на Django
 
 ## Установка приложения
-
+### Клонирование репозитория
+```bash
+git clone https://github.com/yourusername/todo-list-api.git
+cd todo-list-api
+```
 ## Панель администратора
 <p align="center">
  <img src="https://github.com/user-attachments/assets/f730c318-6c8c-4212-a31e-06934d82ca2d" alt="admin">
