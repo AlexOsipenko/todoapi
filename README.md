@@ -42,5 +42,69 @@ Status: Выберите один из трех вариантов: "in_process"
 - На странице редактирования задачи прокрутите вниз и найдите кнопку "Delete" в правом нижнем углу.
 
 - Подтвердите удаление, нажав на кнопку "Yes, I'm sure" на открывшейся странице.
+## API
+**Создание задачи**
+- URL: [/api/tasks/](http://127.0.0.1:8000/api/tasks/)
+- Метод: POST
+Пример body:
+![image](https://github.com/user-attachments/assets/2a477af0-2df8-4429-a5fa-96fdffc28717)
+- Ответ: `201 Created`
+![image](https://github.com/user-attachments/assets/fb94e478-45f6-4b67-aa58-ba2a9d434166)
+
+2. Получение всех задач
+URL: /api/tasks/
+Метод: GET
+Ответ:
+json
+Копировать код
+[
+  {
+    "id": 1,
+    "title": "Новая задача",
+    "description": "Описание задачи",
+    "status": "in_progress"
+  },
+  {
+    "id": 2,
+    "title": "Вторая задача",
+    "description": "Описание второй задачи",
+    "status": "completed"
+  }
+]
+3. Получение задачи по ID
+URL: /api/tasks/{id}/
+Метод: GET
+Ответ:
+json
+Копировать код
+{
+  "id": 1,
+  "title": "Новая задача",
+  "description": "Описание задачи",
+  "status": "in_progress"
+}
+4. Обновление задачи по ID
+URL: /api/tasks/{id}/
+Метод: PATCH
+Тело запроса:
+json
+Копировать код
+{
+  "title": "Обновлённая задача",
+  "status": "completed"
+}
+Ответ (200 OK):
+json
+Копировать код
+{
+  "id": 1,
+  "title": "Обновлённая задача",
+  "description": "Описание задачи",
+  "status": "completed"
+}
+5. Удаление задачи по ID
+URL: /api/tasks/{id}/
+Метод: DELETE
+Ответ (204 No Content) при успешном удалении.
 
 
