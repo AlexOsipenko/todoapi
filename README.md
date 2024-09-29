@@ -4,7 +4,7 @@
 ## Установка приложения
 ### Клонирование репозитория
 ```bash
-git clone https://github.com/yourusername/todo-list-api.git
+git clone https://github.com/AlexOsipenko/todoapi.git
 cd todo-list-api
 ```
 ## Панель администратора
