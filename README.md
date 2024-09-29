@@ -103,4 +103,8 @@ Status: Выберите один из трех вариантов: "in_process"
 ![image](https://github.com/user-attachments/assets/24824d75-0adf-44a9-b0f6-32205b263b55)
 
 ### Serializers
+Для валидации статуса был использовал сериализатор, который находится на пути: `todo_progect/tasks/serializers.py`
+
+![image](https://github.com/user-attachments/assets/9bae1225-a0e4-495b-a22e-d61597a54acc)
+
 
