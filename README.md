@@ -54,7 +54,7 @@ Status: Выберите один из трех вариантов: "in_process"
 <img src="https://github.com/user-attachments/assets/71dca4a1-7847-4417-b458-ba392b09afc2" width="20" alt="postman">
 
 ### **Создание задачи**
-- URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/](/api/tasks/http://127.0.0.1:8000/api/tasks/)
+- URL: [http://127.0.0.1:8000/api/tasks/](http://127.0.0.1:8000/api/tasks/)
 - Метод: `POST`
 - Пример body:
 
@@ -65,7 +65,7 @@ Status: Выберите один из трех вариантов: "in_process"
 ![image](https://github.com/user-attachments/assets/fb94e478-45f6-4b67-aa58-ba2a9d434166)
 
 ### **Получение всех задач**
-- URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/](/api/tasks/http://127.0.0.1:8000/api/tasks/)
+- URL: [http://127.0.0.1:8000/api/tasks/](http://127.0.0.1:8000/api/tasks/)
 - Метод: `GET`
 - Ответ: `200 OK`
 
@@ -73,16 +73,16 @@ Status: Выберите один из трех вариантов: "in_process"
 
 
 ### **Получение задачи по ID**
-- URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
+- URL: [http://127.0.0.1:8000/api/tasks/{id}/](http://127.0.0.1:8000/api/tasks/2/)
 - Метод: `GET`
 - Пример URL: `http://127.0.0.1:8000/api/tasks/2/`
 - Ответ: `200 OK` или `404 Not Found`, если задача не найдена
- 
+
  
 ![image](https://github.com/user-attachments/assets/9f5d336f-46f3-4954-9576-04b7036bfb39)
 
 ### **Обновление задачи по ID**
-- URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
+- URL: [http://127.0.0.1:8000/api/tasks/{id}/](http://127.0.0.1:8000/api/tasks/3/)
 - Метод: `PATCH`
 - Пример URL: `http://127.0.0.1:8000/api/tasks/3/`
 - Пример body:
@@ -94,12 +94,31 @@ Status: Выберите один из трех вариантов: "in_process"
 ![image](https://github.com/user-attachments/assets/4f15f80f-4f21-4576-8dc8-9dddcd559070)
 
 ### **Удаление задачи по ID**
-- URL: [/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/](/api/tasks/http://127.0.0.1:8000/api/tasks/{id}/)
+- URL: [http://127.0.0.1:8000/api/tasks/{id}/](http://127.0.0.1:8000/api/tasks/4/)
 - Метод: `DELETE`
 - Пример URL: `http://127.0.0.1:8000/api/tasks/4/`
 - Ответ: `204 No Content` или `404 Not Found`, если задача не найдена. Если удаление невозможно, то `400 Bad Request`
 
 ![image](https://github.com/user-attachments/assets/812748e9-dcbb-4cee-a24d-f7ba215f9beb)
+
+### **Фильтрация**
+- URL: [http://127.0.0.1:8000/api/tasks/?status={status_choice}](http://127.0.0.1:8000/api/tasks/?status=completed)
+- Поле Фильтрации `status`
+- Метод `Get`
+- Пример запроса для фильтрации(выдать ответ, где статус = completed) `http://127.0.0.1:8000/api/tasks/?status=completed`
+- Ответ
+
+![image](https://github.com/user-attachments/assets/fa662d60-a23d-4d3a-a135-1cf48505d40f)
+
+### Сортировка
+- URL: [http://127.0.0.1:8000/api/tasks/?ordering={ordering_field}](http://127.0.0.1:8000/api/tasks/?ordering=title)
+- Поля сортировки `title` `status`
+- Метод `Get`
+- Пример запроса для сортировки(выдать отсортированные по статусу задачи) `http://127.0.0.1:8000/api/tasks/?ordering=status`
+- Ответ
+
+![image](https://github.com/user-attachments/assets/831b7ab2-6a74-44e1-8983-b5e17e203895)
+
 
 ## Особенности
 ### Обработка возможных ошибок
